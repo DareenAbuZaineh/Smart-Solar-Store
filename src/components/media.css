@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+
+  .logo img {
+    height: 60px; 
+    width: 60px;  
+     }
+
+  .menu-toggle-l {
+    display: block;
+  }
+
+  .pages-link {
+    display: none;
+    position: absolute; /* ارجعي شوفي هاي ممكن تنسألي عنها */
+    flex-direction: column;
+    width: 220px;
+    padding: 12px;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(7, 0, 0, 0.42);
+    z-index: 100;
+    transition: all 0.3s ease;
+    opacity: 0;
+    height: 0;
+  }
+
+    .menu-toggle:checked  ~ .pages-link {
+    display: flex;
+    opacity: 1;
+    height: auto;
+    padding: 20px;
+    
+  }
+
+}

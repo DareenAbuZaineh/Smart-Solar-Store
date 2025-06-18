@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+  margin-left: 12px;
+  height: 70px; 
+  width: 80px;
+}
+.menu-toggle {   /* هاي لحتى نخفي زر التوجيل الأساسي يعني قائمة التشيكبوكس */
+  display: none;
+}
+.menu-toggle-l{
+  display: none;
+  cursor: pointer;
+  font-size: 26px;
+  color: #f3f2f2;
+}
+
+ .my-navbar {
+  display: flex;
+  position: absolute;  /*  هون اخترنا أبسليوت عشان الناف بار تيجي فوق الخلفية*/
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: transparent; 
+  backdrop-filter: blur(5px);
+}
+.pages-link{
+  gap: 20px;
+}
+.pages-link a{
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+  /* .search-form{
+    display: flex;
+    align-items: center;
+    gap: 2;
+  }
+.input-search{
+  width: 250px;
+  height: 35px;
+  font-size: 12px;
+  padding: 5px 11px;
+  border-radius: 20px 20px;
+  border: 1px solid #202020;
+  transition: all 0.3s ease-in-out;
+  -webkit-border-radius: 20px 20px;
+  -moz-border-radius: 20px 20px;
+  -ms-border-radius: 20px 20px;
+  -o-border-radius: 20px 20px;
+}
+.btn-search{
+  height: 8px;
+  padding: 12px 15px;
+  font-size: 14px;
+  line-height: 0;
+  border-radius:  20px 20px ;
+  background-color: #0a046f;
+  color: rgb(130, 228, 9);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  -webkit-border-radius:  20px 20px ;
+  -moz-border-radius:  20px 20px ;
+  -ms-border-radius:  20px 20px ;
+  -o-border-radius:  20px 20px ;
+  -webkit-border-radius:  20px 20px ;
+}
+.btn-search:hover {
+  background-color: #e06900;
+  color: white;
+} */
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 12px;
+}
+.nav-icons i {
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.nav-icons i:hover {
+  color: #05ffea;
+}
+.hero-sec{
+  background-image: url("hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+
+}
+.hero{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.667);
+  top: 0;
+  bottom: 0;
+  right:0;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 3.4rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg,  #ff9a9e, #fac4f3, #ffeded,  #5ce2eb, #4fea07, #f0f40a,#ec050d, #f30cd4);
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  animation: gradientFlow 2s ease infinite;
+  -webkit-animation: gradientFlow 2s ease infinite wave 3s ease-in-out infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+  text-shadow: 4px 5px 9px rgba(50, 8, 217, 0.92);
+  backdrop-filter: blur(6px); 
+}
+.hero a {
+  padding: 12px 28px;
+  background-color: rgba(152, 4, 142, 0.623);
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
+}
+.hero a:hover {
+  background:linear-gradient(90deg, rgb(23, 235, 217),#ff9a9e, #300449);
+  transform: scale(1.05);
+}
+/* -------------------------------------- section 2 varites --------------------------------------------------------- */
+
+.varieties-sec {
+   padding: 60px 30px;
+  text-align: center;
+  background-color: #f9f9f9; 
+}
+.varieties-sec h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 12px;
+}
+.underline-h {
+  width: 140px;
+  height: 3px;
+  background-color: #e6ff03;
+  margin: 0 auto 40px;
+  border-radius: 3px;
+}
+.varieties-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+.container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+}
+.container-item img {
+  width: 200px;
+  height: 200px;
+  /* object-fit:cover ; */
+  border-radius: 50%;
+  border: 2px solid #00000079;
+  transition: transform 0.3s ease;
+}
+.container-item img:hover {
+  transform: scale(1.1);
+  border: 3px solid #54a5f0;
+}
+.container-item h6 {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #000000;
+}
