@@ -40,46 +40,6 @@
   font-weight: 700;
 }
 
-  /* .search-form{
-    display: flex;
-    align-items: center;
-    gap: 2;
-  }
-.input-search{
-  width: 250px;
-  height: 35px;
-  font-size: 12px;
-  padding: 5px 11px;
-  border-radius: 20px 20px;
-  border: 1px solid #202020;
-  transition: all 0.3s ease-in-out;
-  -webkit-border-radius: 20px 20px;
-  -moz-border-radius: 20px 20px;
-  -ms-border-radius: 20px 20px;
-  -o-border-radius: 20px 20px;
-}
-.btn-search{
-  height: 8px;
-  padding: 12px 15px;
-  font-size: 14px;
-  line-height: 0;
-  border-radius:  20px 20px ;
-  background-color: #0a046f;
-  color: rgb(130, 228, 9);
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  -webkit-border-radius:  20px 20px ;
-  -moz-border-radius:  20px 20px ;
-  -ms-border-radius:  20px 20px ;
-  -o-border-radius:  20px 20px ;
-  -webkit-border-radius:  20px 20px ;
-}
-.btn-search:hover {
-  background-color: #e06900;
-  color: white;
-} */
-
 .nav-icons {
   display: flex;
   align-items: center;
@@ -163,11 +123,11 @@
 /* -------------------------------------- section 2 varites --------------------------------------------------------- */
 
 .varieties-sec {
-   padding: 60px 30px;
+  padding: 60px 30px;
   text-align: center;
   background-color: #f9f9f9; 
 }
-.varieties-sec h2 {
+.varieties-sec h2, .best-seller-sec h2, .trendy-sec h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.5rem;
   color: #222;
@@ -176,8 +136,8 @@
 .underline-h {
   width: 140px;
   height: 3px;
-  background-color: #e6ff03;
-  margin: 0 auto 40px;
+  background-color: #7d0808;
+  margin: 20px auto 40px;
   border-radius: 3px;
 }
 .varieties-boxes {
@@ -195,17 +155,220 @@
 .container-item img {
   width: 200px;
   height: 200px;
-  /* object-fit:cover ; */
   border-radius: 50%;
   border: 2px solid #00000079;
   transition: transform 0.3s ease;
 }
 .container-item img:hover {
   transform: scale(1.1);
-  border: 3px solid #54a5f0;
+  border: 3px solid #8412d1;
 }
 .container-item h6 {
   margin-top: 10px;
   font-size: 0.9rem;
   color: #000000;
+}
+/* -----------------------------------best-seller-sec----------------------------------------- */
+.best-seller-sec{
+  text-align: center;
+  padding: 35px 20px;
+  background-image: url('sec3-bg.jpg') ;
+  background-size: cover;
+}
+
+.boxes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 29px;
+  padding: 20px;
+}
+.box-items{
+  width: 270px;
+  height: 380px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.459);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.box-items:hover{
+  transform: translateY(-8px);
+}
+.box-items img{
+  width: 100%; 
+  height: 280px;
+  border-radius:6px;
+}
+.box-items h6{
+  margin-top: 13px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.box-items p{
+  font-size: 15px;
+  font-weight: 500;
+  color: #c00000;
+}
+
+.Carousel-dots {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.Carousel {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #ccc; /* هاي عشان النقطة بالأساس بكون لونها أبيض متل الصفحة ف عشان تبين منعطيها هيك */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.Carousel.active, .Carousel:hover {
+  background-color: #8d0707;
+}
+/* ---------------------------------------------trendy-section -----------------------------------*/
+.trendy-sec {
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+}
+.section-header{
+  align-items: center;
+  padding-top: 70px;
+  margin-bottom: 30px;
+}
+
+.view-all-btn {
+  position: absolute;
+  right: 0px;
+  margin: -40px 14px;
+  padding: 6px 15px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #c00000;
+  color: white;
+  text-decoration: none;
+  border-radius: 60px;
+  transition: background-color 0.3s;
+  transition: transform 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: scale(1.2);
+}
+.video {
+  width: 220px;
+  max-height: 280px; 
+  margin-bottom: -6px;
+  overflow: hidden;
+}
+.dark-boxes{
+  background: linear-gradient(45deg, #050404, #000000,#d3c0c0, #040202);
+  color: #ffffff;
+}
+
+/* ---------------------------------------------sites-sec-------------------------------------------------- */
+.sites-sec{
+  position: relative;
+  height: 100vh;
+  background-image: url("sec5-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+}
+
+.sites-container{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #00000062;
+  top: 0;
+  bottom: 0;
+  right:0;
+  left: 0;
+  width: 100%;
+  padding: 50px 20px;
+}
+.sites-sec h2{
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow:4px 5px 9px rgba(133, 197, 22, 0.658);
+  backdrop-filter: blur(5px);
+  font-size: 2.5rem;
+  font-family:serif;
+  margin-bottom: 55px;
+}
+.site-btn{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  transition: 0.3s;
+}
+.site-btn a{
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.btn-watsapp{
+  background-color: #4fe60997;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+.btn-insta{
+  background-color: #0000009b;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+.btn-watsapp:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #34f1a9 0%, #25d33f 100%);
+}
+.btn-insta:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #bc1888, #dc2743, #f09433);
+
+}
+/* ----------------------------------------------footer =--------------------------------------------*/
+.footer {
+  background-color: #030303ab;
+  color: #fff;
+  padding: 40px 20px;
+}
+.footer-container {
+  display: flex;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  gap: 50px;
+}
+.about-us {
+  max-width: 380px;
+}
+.about-us h3 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+.contact-info {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 16px;
+}
+.contact-info a i {
+  margin-right: 9px;
+  color: #eeff00;
 }
